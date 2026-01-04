@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #03273b;
+}
+
+:root {
+    --width: 94vw;
+    --w: 3px;
+    --gap: 3px;
+}
+
+header>div {
+    width: var(--width);
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(186, 180, 95);
+    font-style: italic;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(59, 62, 50);
+}
+
+.container {
+    background-color: #025788;
+    height: 82vh;
+    width: var(--width);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2px;
+}
+
+.box {
+    background-color: rgb(173, 109, 229);
+    border: 2px solid rgb(88, 88, 82);
+    padding: 5px 0;
+    text-align: center;
+}
+
+.input {
+    background-color: rgb(223, 232, 163);
+    width: var(--width);
+    height: 40px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.input>label {
+    color: rgb(84, 83, 83);
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.select {
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+    margin: 30px;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 950px;
+}
+
+.select select,
+option {
+    background-color: rgb(207, 205, 97);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.set {
+    background-color: rgb(216, 211, 73);
+    border-radius: 10px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.button {
+    width: 100px;
+    gap: 10px;
+    font-size: 16px;
+    background-color: rgb(216, 211, 73);
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 2.5px;
+
+}
+
+.button:hover {
+    background-color: rgb(196, 190, 18);
+    box-shadow: 0 0 5px rgb(163, 116, 40);
+}
+
+.set:hover {
+    background-color: rgb(196, 190, 18);
+    box-shadow: 0 0 5px rgb(84, 61, 24);
+}
+
+.input>input {
+    accent-color: rgb(184, 22, 130);
+}
+
+
+.display {
+    background-color: rgb(194, 204, 110);
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    border-radius: 20px;
+
+}
+
+.button:hover .one {
+    animation: animateRight 0.5s linear 0s 1 forwards;
+}
+
+.button:hover .two {
+    animation: animateRight 0.5s linear 0s 1 forwards;
+}
+
+.button:hover .three {
+    animation: animateLeft 0.5s linear 0s 1 forwards;
+}
+
+.one {
+    height: 15px;
+    width: var(--w);
+    background-color: rgb(148, 148, 10);
+    border: 1px solid;
+
+}
+
+.two {
+    height: 20px;
+    width: var(--w);
+    background-color: rgb(148, 148, 10);
+    border: 1px solid;
+}
+
+.three {
+    height: 10px;
+    width: var(--w);
+    background-color: rgb(148, 148, 10);
+    border: 1px solid;
+}
+
+.design {
+    width: 30px;
+    height: 28px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: var(--gap);
+}
+
+@keyframes animateRight {
+    from {}
+
+    to {
+        transform: translateX(8px);
+    }
+}
+
+@keyframes animateLeft {
+    from {}
+
+    to {
+        transform: translateX(-16px);
+    }
+}
+
+#sort_algo:hover {
+    background-color: rgb(196, 190, 18);
+}

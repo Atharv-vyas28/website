@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizer</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            Algorithm Visualizer
+        </div>
+    </header>
+    <main>
+        <div class="input">
+            <label for="n">Size of Array</label>
+            <input type="range" max="50" min="2" step="1" id="n" name="input_n">
+
+            <div class="display"></div>
+
+            <button class="set">Set</button>
+
+            <div class="right">
+                <div class="select">
+
+                    <select name="sort_algo" id="sort_algo">
+                        <option value="Bubble_sort">Bubble Sort</option>
+                        <option value="insertion_sort">Insertion Sort</option>
+                        <option value="quick_sort">Quick Sort</option>
+                    </select>
+
+                </div>
+                <button class="button">
+                    Sort
+                    <div class="design">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+
+        </div>
+    </main>
+    <script src="project2.js"></script>
+</body>
+
+</html>
